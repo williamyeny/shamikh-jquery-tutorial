@@ -47,7 +47,7 @@ For more advanced methods, read the jQuery documentation.
 
 ## Listening to and triggering events
 
-Let's say you want to know when an element with ID "button" is clicked.
+Let's say you want to know when an element with ID "button" is clicked, i.e. listening for a click.
 
 Here's how you would do it:
 ```
@@ -55,7 +55,7 @@ $("#button").on("click", function() {
   // code in here executes when click happens
 });
 ```
-What if you want to click on the "button" element programmatically?
+What about the inverse? How do you click on the "button" element programmatically, i.e. trigger its click event?
 
 `$("#button").click(); // if it is a link, it will take you to whatever site in your browser`
 
@@ -88,3 +88,15 @@ Here's another example:
 $("iframe").on("load", function() {
   console.log($(this).attr("id")); // when an iframe is finished loading, print its ID.
 });
+```
+## Further research
+
+Make sure you're familiar with CSS selectors. Advanced CSS selectors can be extremely useful and remove the need for classes/IDs created solely for selection purposes. For example, I use [advanced attribute selectors](https://www.w3schools.com/css/css_attribute_selectors.asp) in my [Chrome extension's click listener](https://github.com/williamyeny/duke-registration-enhancer/blob/master/extension/js/dropDownClickListener.js#L14) to prevent parsing or modifying the host HTML.
+
+Some useful jQuery stuff not mentioned in this tutorial:
+
+* ajax
+* .children()
+* .parent()
+* .each()
+* .addClass()
