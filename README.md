@@ -17,7 +17,7 @@ Remember, `$` only accepts strings!
 
 `$(div); // this gives an error`
 
-## Changing and retrieving properties of elements
+## Modifying elements and retrieving properties
 
 Let's say you want to change the HTML of an element with ID "greeting" to "hello"
 
@@ -43,6 +43,8 @@ What about appending HTML to an element?
 
 `$("body").append("<p>hey dudes!</p>"); // the paragraph with text "hey dudes!" is added to the body`
 
+For more advanced methods, read the jQuery documentation.
+
 ## Listening to and triggering events
 
 Let's say you want to know when an element with ID "button" is clicked.
@@ -55,7 +57,7 @@ $("#button").on("click", function() {
 ```
 What if you want to click on the "button" element programmatically?
 
-`$("#button").click(); // if it is a link, it will take you to whatever site in your browser
+`$("#button").click(); // if it is a link, it will take you to whatever site in your browser`
 
 For more advanced events, read the jQuery documentation.
 
