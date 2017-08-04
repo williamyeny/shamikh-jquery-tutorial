@@ -25,7 +25,15 @@ Let's say you want to change the HTML of an element with ID "greeting" to "hello
 
 What if you want to get the HTML contents of said element?
 
-`var contents = $("#greeting").html(); // value of contents: "hello"`
+`var contents = $("#greeting").html(); // value of "contents": "hello"`
+
+Setting an attribute of the element?
+
+`$("#greeting").attr("class", "top-text") // changes the class`
+
+Retrieve the attribute?
+
+`var class = $("#greeting").attr("class"); // value of "class": "top-text"`
 
 Changing the css of the element?
 
